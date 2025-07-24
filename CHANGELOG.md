@@ -1,5 +1,11 @@
 # @maxiviper117/svelte-artisan
 
+## 1.2.0
+
+### Minor Changes
+
+- ad1c712: Add teardownable Vitest tests for CLI commands (make:component, make:store)
+
 ## 1.1.1
 
 ### Patch Changes
