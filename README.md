@@ -15,12 +15,14 @@ Install and run a command instantly (no install required):
 
 ```sh
 npx svelte-artisan make:component MyComponent
+npx svelte-artisan make:page blog --server
 ```
 
 Or with pnpm:
 
 ```sh
 pnpm dlx svelte-artisan make:component MyComponent
+pnpm dlx svelte-artisan make:page blog --server
 ```
 
 ---
@@ -59,6 +61,7 @@ If you want to run the CLI directly from the source code (for development or deb
 ```sh
 node ./bin/index.js make:component MyComponent
 node ./bin/index.js make:store MyStore
+node ./bin/index.js make:page blog --server
 ```
 
 ---
@@ -69,6 +72,9 @@ node ./bin/index.js make:store MyStore
 |-----------------------------------------|--------------------------------------------------|
 | `make:component <name>`                 | Generate a new Svelte component in `src/lib/components/` |
 | `make:store <name>`                     | Generate a new Svelte store in `src/lib/stores/`  |
+| `make:page <route>`                     | Generate a SvelteKit page in `src/routes/` |
+| `make:layout <route>`                   | Generate a SvelteKit layout in `src/routes/` |
+| `make:action <route>`                   | Generate a `+page.server` file with actions |
 | `--typescript`                          | Generate TypeScript files (optional flag)         |
 | `-h`, `--help`                          | Show help                                         |
 | `-V`, `--version`                       | Show CLI version                                  |
@@ -80,6 +86,9 @@ node ./bin/index.js make:store MyStore
 ```sh
 $ npx svelte-artisan make:component MyComponent
 ✔ Created src/lib/components/MyComponent.svelte
+$ npx svelte-artisan make:page blog --server
+✔ Created src/routes/blog/+page.svelte
+✔ Created src/routes/blog/+page.server.ts
 ```
 
 ---
