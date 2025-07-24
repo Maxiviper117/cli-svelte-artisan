@@ -4,7 +4,7 @@ node_modules/
 .DS_Store
 
 # Changesets
-.changeset/
+# (Allow .changeset/ to be tracked for versioning and changelogs)
 
 # Logs
 npm-debug.log*
