@@ -16,7 +16,7 @@
     "LICENSE"
   ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+  "test": "vitest run",
     "changeset": "pnpm exec changeset",
     "changeset:add": "pnpm exec changeset add",
     "changeset:version": "pnpm exec changeset version",
@@ -51,6 +51,8 @@
     "fs-extra": "^11.3.0"
   },
   "devDependencies": {
-    "@changesets/cli": "^2.29.5"
+    "@changesets/cli": "^2.29.5",
+    "@types/node": "^24.1.0",
+    "vitest": "^3.2.4"
   }
 }
