@@ -1,6 +1,6 @@
 {
   "name": "@maxiviper117/svelte-artisan",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "A CLI tool for Svelte projects inspired by Laravel Artisan. Generate components, stores, and more.",
   "main": "bin/index.js",
   "type": "module",
