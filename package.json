@@ -1,0 +1,56 @@
+{
+  "name": "@maxiviper117/svelte-artisan",
+  "version": "1.0.0",
+  "description": "A CLI tool for Svelte projects inspired by Laravel Artisan. Generate components, stores, and more.",
+  "main": "bin/index.js",
+  "type": "module",
+  "bin": {
+    "svelte-artisan": "./bin/index.js"
+  },
+  "files": [
+    "bin/",
+    "commands/",
+    "src/",
+    "package.json",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "changeset": "pnpm exec changeset",
+    "changeset:add": "pnpm exec changeset add",
+    "changeset:version": "pnpm exec changeset version",
+    "changeset:publish": "pnpm exec changeset publish"
+  },
+  "keywords": [
+    "svelte",
+    "cli",
+    "artisan",
+    "generator",
+    "sveltekit",
+    "component",
+    "store"
+  ],
+  "author": "Maxiviper117",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/maxiviper117/svelte-artisan.git"
+  },
+  "homepage": "https://github.com/maxiviper117/svelte-artisan#readme",
+  "bugs": {
+    "url": "https://github.com/maxiviper117/svelte-artisan/issues"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "packageManager": "pnpm@10.13.1",
+  "dependencies": {
+    "chalk": "^5.4.1",
+    "commander": "^14.0.0",
+    "fs-extra": "^11.3.0"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.29.5"
+  }
+}

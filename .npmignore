@@ -1,0 +1,28 @@
+# Ignore config and dev files
+.gitignore
+.npmignore
+.changeset/
+.env
+.vscode/
+*.log
+*.tgz
+
+# Ignore tests and docs not needed in package
+__tests__/
+test/
+coverage/
+
+# Ignore build output (if not needed by consumers)
+dist/
+build/
+
+# Allow CLI and source files
+!bin/
+!commands/
+!package.json
+!README.md
+!LICENSE
+
+# Ignore test script and src folder
+clear-test-src.ps1
+src/
