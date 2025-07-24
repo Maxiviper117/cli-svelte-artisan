@@ -11,7 +11,13 @@ export function createComponent(name, options = {}) {
   const filePath = path.join(dir, `${name}.svelte`);
   const isTS = options.typescript === true;
   const scriptTag = isTS ? '<script lang="ts">' : '<script>';
-  const content = `${scriptTag}\n\n<\/script>\n\n<main>\n  <h1>${name}<\/h1>\n<\/main>`;
+  // Svelte 5 runes API template
+  const propsExample = isTS
+    ? '  // Example: let { foo = "bar" } = $props<{ foo?: string }>();'
+    : '  // Example: let { foo = "bar" } = $props();';
+  const runesComment = '  // Add $state, $derived, $effect runes here';
+  const childrenExample = '  // To render children/snippets: {@render children?.()}';
+  const content = `${scriptTag}\n${propsExample}\n${runesComment}\n\n</script>\n\n<main>\n  <h1>${name}</h1>\n  <!-- ${childrenExample} -->\n</main>`;
 
   ensureFolder(dir);
   if (fs.existsSync(filePath)) {

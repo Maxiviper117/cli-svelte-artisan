@@ -8,6 +8,7 @@ import { ensureFolder } from './utils.js';
 
 export function createStore(name, options = {}) {
   const dir = './src/lib/stores';
+  // Always use the base name, never add JS/TS suffixes
   const isTS = options.typescript === true;
   const ext = isTS ? 'ts' : 'js';
   const filePath = path.join(dir, `${name}.${ext}`);
