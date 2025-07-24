@@ -1,5 +1,10 @@
 # Svelte Artisan CLI
 
+<!-- Badges -->
+![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/Maxiviper117/cli-svelte-artisan/ci.yml?branch=main&label=build)
+[![npm](https://img.shields.io/npm/v/cli-svelte-artisan)](https://www.npmjs.com/package/cli-svelte-artisan)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
+
 A CLI tool for Svelte projects inspired by Laravel Artisan.
 
 ## Features
